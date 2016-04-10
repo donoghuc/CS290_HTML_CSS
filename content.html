@@ -1,0 +1,180 @@
+<!--****************************************************************
+Cas Donoghue
+10APR2016
+HTML/CSS assignment1
+Web pg to meet specifications at https://oregonstate.instructure.com/courses/1583015/assignments/6730661?module_item_id=16767502
+*******************************************************************-->
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>HTML/CSS_Assignment</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+ </head>
+ <body>
+ <!-- This is the 6X6 table requested Please note the alternating colors in the style.css-->
+ <div>
+	 <H3>Table to satisfy requirements</H3>
+
+		  <table class="One">
+		  <caption>Dual Sport Comparisons</caption>
+		  	<thead>
+		  		<tr>
+		  			<th></th>
+		  			<th>Speed</th>
+		  			<th>Torque</th>
+		  			<th>Handling</th>
+		  			<th>Off-Road</th>
+		  			<th>Durability</th>
+		  		</tr>
+		  	</thead>
+		  	<tbody>
+		  		<tr>
+		  			<th class="One">Yamaha XT</th>
+		  			<td class="Two">8</td>
+		  			<td>10</td>
+		  			<td class="Four">8</td>
+		  			<td>10</td>
+		  			<td>10</td>
+		  		</tr>
+		  	  	<tr>
+		  			<th class="One">Kawasaki KLR</th>
+		  			<td class="Two">7</td>
+		  			<td>9</td>
+		  			<td class="Four">9</td>
+		  			<td>8</td>
+		  			<td>9</td>
+		  		</tr>
+		  	  	<tr>
+		  			<th class="One">Honda XR</th>
+		  			<td class="Two">6</td>
+		  			<td>8</td>
+		  			<td class="Four">7</td>
+		  			<td>7</td>
+		  			<td>6</td>
+		  		</tr>
+		    	<tr>
+		  			<th class="One">BSA Victor</th>
+		  			<td class="Two">9</td>
+		  			<td>6</td>
+		  			<td class="Four">6</td>
+		  			<td>9</td>
+		  			<td>8</td>
+		  		</tr>
+		  		<tr>
+		  			<th class="One">BMW GS</th>
+		  			<td class="Two">10</td>
+		  			<td>7</td>
+		  			<td class="Four">10</td>
+		  			<td>6</td>
+		  			<td>7</td>
+		  		</tr>
+
+
+		  	</tbody>
+		  	<tfoot>
+		  		<tr>
+		  			<td colspan="2">*All Years</td>
+		  			<td colspan="4">Rating 1-10, 10 = Best </td>
+		  		</tr>
+		  	</tfoot>
+		</table>
+</div>
+<div>
+<!-- Pretty simple list. I chose to do the Ordered list -->
+<h3>Ordered List w/three elements</h1>
+<ol>
+		<li>One Entry</li>
+		<li>Two Entries</li>
+		<li>Three Entries</li>
+</ol>
+</div>
+<!-- Nested Divs to style with style.css -->
+<div id="outer-content">
+	<div id="inner-content">
+		<p class="centerThis">Inner Content</p>
+	</div>
+</div>
+
+<H3>Form Submitted Via Get</H5>
+<!-- the get form that satisfies requirements -->
+<form action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php" method="get">
+	<fieldset>
+		<legend>
+			Some Get Data:
+		</legend>
+		<fieldset>
+			<label>
+			Text Here:
+			<input type="text" name="text_input" size="30">
+			</label>
+		</fieldset>	
+		<br />
+		<fieldset>
+			<label>
+			Number Here:
+			<input type="number" name="numerical_input" size="30"> 
+			</label>	
+		</fieldset>
+		<br />
+		<fieldset>
+			<label>
+			Password Here:
+			<input type="password" name="pasword_input" size="30"> 
+			</label>	
+		</fieldset>
+		<br />
+		<fieldset>
+			Please Select Between<br />
+			<label><input type="radio" name="candy" value="Snickers" /> Snickers</label> <br />
+			<label><input type="radio" name="candy" value="Skittles" /> Skittles</label> <br />
+			<label><input type="radio" name="candy" value="Mentos" /> Mentos</label> <br />
+			<br />
+			<input type="submit" value="Submit" />
+		</fieldset>
+
+	</fieldset>
+</form>
+
+<H3>Form Submitted Via Post</H5>
+<!-- the post form that satisfies requirements -->
+<form action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php" method="post">
+	<fieldset>
+		<legend>
+			Some Post Data:
+		</legend>
+		<fieldset>
+			<label>
+			Text Here:
+			<input type="text" name="text_input" size="30">
+			</label>
+		</fieldset>	
+		<br />
+		<fieldset>
+			<label>
+			Number Here:
+			<input type="number" name="numerical_input" size="30"> 
+			</label>	
+		</fieldset>
+		<br />
+		<fieldset>
+			<label>
+			Password Here:
+			<input type="password" name="pasword_input" size="30"> 
+			</label>	
+		</fieldset>
+		<br />
+		<fieldset>
+			Please Select Between<br />
+			<label><input type="radio" name="candy" value="Snickers" /> Snickers</label> <br />
+			<label><input type="radio" name="candy" value="Skittles" /> Skittles</label> <br />
+			<label><input type="radio" name="candy" value="Mentos" /> Mentos</label> <br />
+			<br />
+			<input type="submit" value="Submit" />
+		</fieldset>
+
+	</fieldset>
+</form>
+</body>
+</html>

@@ -1,0 +1,71 @@
+/****************************************************************
+Cas Donoghue
+CS290
+09APR2016
+Stylesheet for the HTML/CSS Assignment1
+*****************************************************************/
+/*Make the whole outline of the table show up*/
+table.One {
+	border: thin solid black;
+}
+/*Caption to describe what is in the table does not need to be bordered*/
+caption {
+	border: 0px 0px thin 0px;
+}
+/*border all "cells" of the table */
+th, tr, td {
+	border: thin solid black;
+}
+/*the column for titles (column1) should be italisized*/
+th.One {
+	font-weight: normal;
+	font-style: italic;
+}
+/*The example had columns 2 and 4 have colored text so i did this*/
+td.Two	{
+	color: red;
+}
+
+td.Four	{
+	color: blue;
+}
+/*the next two stylings will alternate some light background colors (red and yellow) to all even and odd rows in the table body
+leaving the default transparent background for the table head and foot. 
+*/
+tbody tr:nth-child(even)	{
+	background: #EEB4B4;
+}
+
+tbody tr:nth-child(odd)	{
+	background: #FFFFCC;
+}
+
+/*This is the outer div, it is 20px away from its prev element and has a 
+width that is 75% of the web pg.*/
+#outer-content {
+    width: 75%;
+    height: 60px;
+    background-color: #FF69B4;    /*this is a color from a google search for a pink hex code for CSS*/
+    position: relative;
+    top: 20px;
+}
+/* this is the inner div, it is 75% of the width of its parent (the outer div). It is centered relative to the 
+outer div */
+#inner-content 	{
+	
+	width: 75%;
+	height: 75%;
+	background-color: blue;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+/* This is the inner content to the nested div. It is centered and has white text */
+p.centerThis {
+	position: relative;
+	text-align: center;
+	color: white;
+}
